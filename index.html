@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Manager</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Product Manager</h1>
+            <form action="#" id="add-product-form">
+                <h2>Agregar Producto</h2>
+                <div>
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div>
+                    <label for="description">Descripción:</label>
+                    <input type="text" id="description" name="description">
+                </div>
+                <div>
+                    <label for="price">Precio:</label>
+                    <input type="text" id="price" name="price" value="$">
+                </div>
+                <div>
+                    <label for="thumbnail">Thumbnail:</label>
+                    <input type="text" id="thumbnail" name="thumbnail">
+                </div>
+                <div>
+                    <label for="stock">Stock:</label>
+                    <input type="number" id="stock" name="stock" min="0">
+                </div>
+                <div id="add-product-form-error" class="error"></div>
+                <button id="add-product-submit" type="submit">Agregar</button>
+            </form>
+            <h2>Products</h2>
+            <table id="products-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Thumbnail</th>
+                        <th>Id</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody id="products-table-body">
+                </tbody>
+            </table>
+            <script src="./product-manager.js"></script>
+        </div>    
+    </body>
+</html>
